@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin">
+    <LinearLayout
+        android:id="@+id/d1"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="category"
+            />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:text="food"
+            />
+    </LinearLayout>
+<ListView
+    android:id="@+id/displaycate"
+    android:layout_width="100dp"
+    android:layout_height="150dp"
+    android:layout_below="@+id/d1" />
+
+<ListView
+        android:id="@+id/displayFood"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/d1"
+        android:layout_toRightOf="@+id/displaycate" />
+<EditText
+    android:id = "@+id/search"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/displayFood"
+    android:layout_centerHorizontal="true"
+    android:hint="please enter the food name"/>
+<Button
+    android:id="@+id/submitSearch"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text = "search"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/search"/>
+    <ListView
+    android:id="@+id/searchFood"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_below="@+id/submitSearch"/>
+
+
+</RelativeLayout>

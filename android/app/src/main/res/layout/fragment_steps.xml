@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin">
+    <TextView
+        android:id = "@+id/s1"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:text = "steps data"/>
+    <LinearLayout
+        android:id="@+id/s3"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/s1">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="id"
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="steps"
+            />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="time"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/displaySteps"
+        android:layout_below="@+id/s3"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+
+    <TextView
+        android:id = "@+id/requireSteps"
+        android:layout_below="@+id/displaySteps"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="set your steps"/>
+
+    <EditText
+        android:id="@+id/setSteps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/requireSteps"
+        android:hint="please enter steps number to create"/>
+    <Button
+        android:id = "@+id/submitStep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setSteps"
+        android:layout_centerHorizontal="true"
+        android:text="create" />
+    <TextView
+        android:id="@+id/stepsResult"
+        android:layout_below="@+id/submitStep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id = "@+id/s2"
+        android:layout_below="@+id/stepsResult"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text = "delete steps"/>
+    <EditText
+        android:id = "@+id/deSM"
+        android:layout_below="@+id/s2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint = "please enter the step id to delete"
+        />
+    <Button
+        android:id = "@+id/deleteStep"
+        android:layout_below="@+id/deSM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text = "delete"/>
+    <TextView
+        android:id="@+id/deleteStepsResult"
+        android:layout_below="@+id/deleteStep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

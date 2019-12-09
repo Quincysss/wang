@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/m1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ma1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="name:    " />
+
+        <TextView
+            android:id="@+id/park_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ma1" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/m2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/m1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ma2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="open_now: " />
+
+        <TextView
+            android:id="@+id/open_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ma2" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/m3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/m2"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/ma3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="rating: " />
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ma3" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/m4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/m3"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/ma4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="latitude: " />
+
+        <TextView
+            android:id="@+id/latitude"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ma4" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/m5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/m4"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/ma5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="longitude: " />
+
+        <TextView
+            android:id="@+id/longitude"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ma5" />
+    </LinearLayout>
+</RelativeLayout>
